@@ -1,0 +1,1 @@
+# ami-launch_configuration-autoscaling
