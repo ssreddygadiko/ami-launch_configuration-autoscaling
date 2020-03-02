@@ -1,0 +1,18 @@
+{
+"instance":{
+ "instance_id": "i-00a8f79d723e268c1",
+ "Region": "ap-south-1"
+},
+"AMI":{
+ "AMI_name": "crimson",
+ "AMI_des": "crimson"
+},
+"Launch_configuration":{
+ "instance_type": "t2.micro",
+ "ASG_name": "crimson-Asg",
+ "New_LC": "crimson-lc",
+ "keypair": "crimson",
+ "SG_id": "sg-0729647ba1e3b0521"
+}
+}
+

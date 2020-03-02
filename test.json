@@ -1,0 +1,51 @@
+{
+"Parameters": {
+"InstanceIDParameter": {
+"Type": "String",
+"Default": "i-08ecc447e9153f68d"
+},
+"InstanceTypeParameter": {
+"Type": "String",
+"Default": "t2-micro"
+},
+"RegionParameter": {
+"Type": "String",
+"Default": "ap-south-1"
+},
+"AMINameParameter": {
+"Type": "String",
+"Default": "Crimon"
+},
+"AMIDesParameter": {
+"Type": "String",
+"Default": "Crimson"
+},
+"ASGNameParameter": {
+"Type": "String",
+"Default": "Crimson-Asg"
+},
+"NewLCParameter": {
+"Type": "String",
+"Default": "crimson-lc"
+},
+"keypairParameter": {
+"Type": "String",
+"Default": "crimson"
+},
+"SecuritygroupParameter": {
+"Type" : "String",
+"Default": "sg-0729647ba1e3b0521"
+}
+},
+"AWSTemplateFormatVersion": "2010-09-09",
+"Resources": {
+"AMICreate": {
+"Type": "AWS::CloudFormation::WaitCondition",
+"CreationPolicy": {
+"ResourceSignal": {
+"Timeout": "PT10M"
+}
+}
+}
+}
+}
